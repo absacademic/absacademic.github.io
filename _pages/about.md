@@ -6,7 +6,7 @@ subtitle: Mathematics & Statistics and Data Science at UCLA
 
 profile:
   align: left
-  image: 
+  image:
   image_circular: true
   more_info: >
     <p>Los Angeles, California</p>

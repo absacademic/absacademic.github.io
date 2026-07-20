@@ -47,41 +47,41 @@ records, and low-liquidity quotes.
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin:1.5rem 0;">
 
-  <a href="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}"
+<a href="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}"
      data-lightbox="volatility-gallery"
      data-title="Estimated implied-volatility surface">
-    <img
+<img
       src="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}"
       alt="Estimated implied-volatility surface"
       style="width:100%; border-radius:8px;">
-  </a>
+</a>
 
-  <a href="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}"
+<a href="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}"
      data-lightbox="volatility-gallery"
      data-title="Observed and fitted volatility smile">
-    <img
+<img
       src="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}"
       alt="Observed and fitted volatility smile"
       style="width:100%; border-radius:8px;">
-  </a>
+</a>
 
-  <a href="{{ '/assets/img/projects/volatility/residuals.png' | relative_url }}"
+<a href="{{ '/assets/img/projects/volatility/residuals.png' | relative_url }}"
      data-lightbox="volatility-gallery"
      data-title="Smile-fit residual diagnostics">
-    <img
+<img
       src="{{ '/assets/img/projects/volatility/residuals.png' | relative_url }}"
       alt="Smile-fit residual diagnostics"
       style="width:100%; border-radius:8px;">
-  </a>
+</a>
 
-  <a href="{{ '/assets/img/projects/volatility/term-structure.png' | relative_url }}"
+<a href="{{ '/assets/img/projects/volatility/term-structure.png' | relative_url }}"
      data-lightbox="volatility-gallery"
      data-title="ATM volatility term structure">
-    <img
+<img
       src="{{ '/assets/img/projects/volatility/term-structure.png' | relative_url }}"
       alt="ATM volatility term structure"
       style="width:100%; border-radius:8px;">
-  </a>
+</a>
 
 </div>
 
