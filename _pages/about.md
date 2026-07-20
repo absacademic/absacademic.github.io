@@ -16,7 +16,7 @@ latest_posts:
   enabled: false
 ---
 
-# About Me
+## About Me
 
 I am an undergraduate at the University of California, Los Angeles, double majoring in Mathematics and Statistics and Data Science.
 
