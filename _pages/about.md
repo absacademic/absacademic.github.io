@@ -6,8 +6,6 @@ subtitle: Mathematics & Statistics and Data Science at UCLA
 
 profile:
   align: left
-  image:
-  image_circular: true
   more_info: >
     <p>Los Angeles, California</p>
     <p><a href="https://github.com/absacademic">GitHub</a></p>

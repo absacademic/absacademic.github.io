@@ -2,7 +2,6 @@
 layout: page
 title: Equity Volatility Research Platform
 description: A reproducible Python and SQL platform for option pricing, implied-volatility estimation, surface modeling, and data-quality analysis.
-img: assets/img/projects/volatility/cover.png
 importance: 1
 category: quantitative finance
 
