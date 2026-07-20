@@ -4,26 +4,14 @@ title: about
 permalink: /
 subtitle: Mathematics & Statistics and Data Science at UCLA
 
-profile:
-  align: left
-  more_info: >
-    <p>Los Angeles, California</p>
-    <p><a href="https://github.com/absacademic">GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/arun-sinha-/">LinkedIn</a></p>
-    <!-- <p><a href="/assets/pdf/resume.pdf">Resume</a></p> -->
-
 selected_papers: false
-social: false
+social: true
 
 announcements:
   enabled: false
-  scrollable: false
-  limit:
 
 latest_posts:
   enabled: false
-  scrollable: false
-  limit:
 ---
 
 # About Me
