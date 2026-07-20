@@ -73,11 +73,11 @@ records, and low-liquidity quotes.
       style="width:100%; border-radius:8px;">
 </a>
 
-<a href="{{ '/assets/img/projects/volatility/term-structure.png' | relative_url }}"
+<a href="{{ '/assets/img/projects/volatility/atm_term_structure.png | relative_url }}"
      data-lightbox="volatility-gallery"
      data-title="ATM volatility term structure">
 <img
-      src="{{ '/assets/img/projects/volatility/term-structure.png' | relative_url }}"
+      src="{{ '/assets/img/projects/volatility/atm_term_structure.png' | relative_url }}"
       alt="ATM volatility term structure"
       style="width:100%; border-radius:8px;">
 </a>
