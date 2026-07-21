@@ -20,6 +20,6 @@ latest_posts:
 
 I am an undergraduate at the University of California, Los Angeles, double majoring in Mathematics and Statistics and Data Science.
 
-My interests include quantitative finance, machine learning, statistical modeling, applied economics, and building reproducible analytical systems.
+My interests include quantitative finance, machine learning, statistical modeling, applied economics, and building analytical systems.
 
 This website contains selected projects and technical work.

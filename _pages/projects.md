@@ -8,7 +8,6 @@ nav_order: 2
 
 display_categories:
   - quantitative finance
-  - data analysis
   - research
 
 horizontal: false
