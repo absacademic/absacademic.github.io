@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 nav_title: projects
 permalink: /projects/
 description: Selected quantitative and data-analysis projects.
