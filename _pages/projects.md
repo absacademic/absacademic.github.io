@@ -1,11 +1,15 @@
 ---
 layout: page
-title: Projects
-nav_title: projects
+title: projects
 permalink: /projects/
 description: Selected quantitative and data-analysis projects.
 nav: true
 nav_order: 2
+
+_styles: |
+  .post-title {
+    text-transform: capitalize;
+  }
 
 display_categories:
   - quantitative finance
