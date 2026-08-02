@@ -23,3 +23,5 @@ I am an undergraduate at the University of California, Los Angeles, double major
 My interests include quantitative finance, machine learning, statistical modeling, applied economics, and building analytical systems.
 
 This website contains selected projects and technical work.
+
+[LinkedIn](https://www.linkedin.com/in/arun-sinha-/) · [GitHub](https://github.com/absacademic)
