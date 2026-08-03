@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Equity Volatility Research Platform
-description: A reproducible Python and SQL platform for equity-option data pipelines, implied-volatility surface estimation, no-arbitrage diagnostics, and historical volatility features.
+description: A tested Python and SQL platform for option pricing, volatility-surface modeling, event research, and execution-aware strategy backtesting.
 importance: 1
 category: quantitative finance
 
@@ -11,106 +11,94 @@ images:
 
 ## Overview
 
-I built a modular research platform for equity-option data ingestion,
-pricing, implied-volatility estimation, surface modeling, and volatility
-feature engineering.
+I built an end-to-end quantitative research platform for analyzing equity-option
+markets, from raw market-data processing through volatility modeling and
+strategy evaluation.
 
-The platform integrates option quotes, underlying prices, interest-rate
-curves, dividend data, event calendars, and underlying-price history into
-analysis-ready Parquet datasets, CSV reports, and DuckDB tables.
-
-It calculates implied volatilities, Greeks, parity-implied forwards,
-standardized volatility points, realized-volatility measures, and daily
-surface features while applying automated data-quality and no-arbitrage
-controls.
+The platform combines option quotes, underlying prices, interest rates,
+dividends, event calendars, and price history into reproducible research
+datasets. It supports option pricing, implied-volatility estimation,
+volatility-surface fitting, event studies, Monte Carlo simulation, and
+contract-level backtesting.
 
 [View the GitHub repository](https://github.com/absacademic/equity-volatility-platform)
 
-## Key features
+## What the platform does
 
-- Black–Scholes and Black–76 pricing with analytical Greeks
-- Bid, midpoint, and ask implied-volatility estimation
-- Exact time-to-expiration and interpolated zero-rate calculations
-- Put–call-parity forward estimation using multiple near-ATM option pairs
-- Discrete-dividend present-value and dividend-adjusted forward calculations
-- Early-exercise risk flags for American-style calls and puts
-- SVI and cubic-spline volatility-smile fitting
-- Equal, vega, inverse-spread, and quote-quality weighting
-- RMSE, residual, coverage, stability, and failure-rate diagnostics
-- Strike-monotonicity, butterfly-convexity, total-variance, and calendar checks
-- Automated rejection or adjustment of invalid fitted surfaces
-- Standardized 10-delta, 25-delta, and ATM volatility points
-- Downside-skew, risk-reversal, butterfly, curvature, and term-structure features
-- Five-, 20-, and 60-day realized-volatility calculations
-- Volatility-risk-premium and historical surface comparisons
-- Point-in-time event features without future-information leakage
-- Parquet, CSV, DuckDB, Markdown report, Typer CLI, and pytest workflows
+- Processes and validates option, underlying, rate, dividend, and event data
+- Calculates Black–Scholes and Black–76 prices, Greeks, and bid/midpoint/ask implied volatilities
+- Estimates parity-implied forwards and applies dividend adjustments
+- Fits SVI and cubic-spline volatility smiles and surfaces
+- Tests fitted and observed prices for no-arbitrage violations
+- Constructs standardized volatility, skew, term-structure, realized-volatility, and volatility-risk-premium features
+- Builds point-in-time event-study datasets without future-information leakage
+- Evaluates chronological linear, logistic, and nonlinear models
+- Prices barrier options using a Monte Carlo engine
+- Backtests delta-hedged option strategies using actual contract selection, bid-ask execution, transaction costs, financing, and capital limits
+- Attributes strategy results to option, hedge, Greek, financing, and execution components
 
-## Project architecture
+## Research workflow
 
-1. Raw market-data adapters
-2. Data validation and quality-control flags
-3. Underlying-price alignment and quote rejection
-4. Partitioned Parquet storage and metadata reports
-5. DuckDB analytical views
-6. Pricing, Greeks, and implied-volatility calculations
-7. Rate interpolation and parity-based forward estimation
-8. SVI and cubic-spline surface fitting
-9. Model evaluation and no-arbitrage controls
-10. Standardized volatility-point interpolation
-11. Daily volatility-feature construction
-12. Event-linked and historical surface comparisons
-13. Reproducible reports, tests, and command-line workflows
+The platform connects five stages of quantitative research:
 
-## Image gallery
+- Market-data engineering: Normalizes raw inputs, aligns timestamps, scores quote quality, and separates accepted and rejected observations
+- Option and volatility modeling: Calculates prices, Greeks, implied volatilities, forward prices, and fitted volatility surfaces
+- Feature construction: Produces standardized delta points, skew measures, term structures, realized volatility, historical comparisons, and event-linked features
+- Model evaluation: Uses chronological train, validation, test, and walk-forward periods to measure out-of-sample performance and model stability
+- Strategy testing: Converts model signals into exact option trades with realistic execution, delta hedging, costs, liquidity constraints, and risk controls
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin:1.5rem 0;">
+## Testing and architecture
 
-<a href="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}"
-     data-lightbox="volatility-gallery"
-     data-title="Estimated implied-volatility surface">
-<img
-      src="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}"
-      alt="Estimated implied-volatility surface"
-      style="width:100%; border-radius:8px;">
-</a>
+The project is implemented as an installable Python package with a Typer
+command-line interface, configuration-driven workflows, DuckDB analytical
+views, and Parquet-based storage.
 
-<a href="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}"
-     data-lightbox="volatility-gallery"
-     data-title="Observed and fitted volatility smile">
-<img
-      src="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}"
-      alt="Observed and fitted volatility smile"
-      style="width:100%; border-radius:8px;">
-</a>
+The automated test suite covers pricing formulas, implied-volatility solvers,
+data validation, surface fitting, no-arbitrage diagnostics, event-study
+construction, Monte Carlo pricing, contract selection, execution costs,
+hedging, P&L attribution, and complete pipeline workflows.
 
-<a href="{{ '/assets/img/projects/volatility/residuals.png' | relative_url }}"
-     data-lightbox="volatility-gallery"
-     data-title="Smile-fit residual diagnostics">
-<img
-      src="{{ '/assets/img/projects/volatility/residuals.png' | relative_url }}"
-      alt="Smile-fit residual diagnostics"
-      style="width:100%; border-radius:8px;">
-</a>
+The repository also includes:
 
-<a href="{{ '/assets/img/projects/volatility/atm_term_structure.png' | relative_url }}"
-     data-lightbox="volatility-gallery"
-     data-title="ATM volatility term structure">
-<img
-      src="{{ '/assets/img/projects/volatility/atm_term_structure.png' | relative_url }}"
-      alt="ATM volatility term structure"
-      style="width:100%; border-radius:8px;">
-</a>
+- 24 pytest modules
+- Branch-coverage enforcement with an 85% minimum
+- Ruff linting and formatting
+- Deterministic synthetic demonstrations
+- Make commands
+- Docker support
+- Parquet, CSV, DuckDB, JSON, Markdown, and plotting outputs
+
+## Selected outputs
+
+The figures below were generated by the platform’s (reproducible) demonstration workflows.
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; margin:1.5rem 0;">
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Fitted implied-volatility surface"> <img src="{{ '/assets/img/projects/volatility/surface.png' | relative_url }}" alt="Fitted implied-volatility surface" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Fitted implied-volatility surface across moneyness and maturity. </figcaption> </figure>
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Observed and fitted volatility smile"> <img src="{{ '/assets/img/projects/volatility/smile.png' | relative_url }}" alt="Observed and fitted volatility smile" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Observed implied volatilities with spline and SVI fits. </figcaption> </figure>
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/expected_vs_realized.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Expected versus realized event moves"> <img src="{{ '/assets/img/projects/volatility/expected_vs_realized.png' | relative_url }}" alt="Expected versus realized event moves" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Option-implied event moves compared with realized outcomes. </figcaption> </figure>
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/cumulative_strategy_return.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Contract-level strategy backtest"> <img src="{{ '/assets/img/projects/volatility/cumulative_strategy_return.png' | relative_url }}" alt="Contract-level options strategy backtest" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Executable bid-ask performance compared with a midpoint upper bound. </figcaption> </figure>
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/pnl_attribution.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Strategy P&L attribution"> <img src="{{ '/assets/img/projects/volatility/pnl_attribution.png' | relative_url }}" alt="Strategy profit and loss attribution" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Greek, hedge, transaction-cost, financing, and residual attribution. </figcaption> </figure>
+
+<figure style="margin:0;"> <a href="{{ '/assets/img/projects/volatility/sensitivity_sharpe.png' | relative_url }}" data-lightbox="volatility-gallery" data-title="Strategy sensitivity analysis"> <img src="{{ '/assets/img/projects/volatility/sensitivity_sharpe.png' | relative_url }}" alt="Strategy sensitivity analysis" style="width:100%; border-radius:8px;"> </a> <figcaption style="margin-top:0.4rem; font-size:0.9rem;"> Performance sensitivity across signal, cost, liquidity, and hedging assumptions. </figcaption> </figure>
 
 </div>
 
+## Technical stack
+
+Python, NumPy, SciPy, Polars, DuckDB, PyArrow, Pydantic, Typer, Matplotlib, Plotly, pytest, Ruff, SQL, Parquet, Git, Make, and Docker
+
 ## Takeaways
 
-This project has strengthened my understanding of option-pricing models,
-market-data engineering, no-arbitrage conditions, nonlinear optimization,
-volatility-surface diagnostics, point-in-time feature construction, and
-production-oriented Python design.
+This project gave me experience connecting derivatives theory, market-data
+engineering, statistical modeling, and realistic strategy evaluation within
+one tested research system.
 
-It has also given me experience designing tested analytical pipelines that
-produce reproducible datasets, databases, reports, and model-quality
-indicators for further quantitative research.
+It strengthened my understanding of option pricing, implied volatility,
+no-arbitrage conditions, nonlinear optimization, Monte Carlo simulation,
+chronological validation, delta hedging, transaction costs, risk controls, and
+production-oriented Python design.
