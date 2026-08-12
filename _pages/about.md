@@ -24,7 +24,7 @@ My interests include quantitative finance, machine learning, statistical modelin
 
 This website contains selected projects and technical work.
 
-[**My projects**](https://absacademic.github.io/projects/)
+[My Projects](https://absacademic.github.io/projects/)
 
 [LinkedIn](https://www.linkedin.com/in/arun-sinha-/) · [GitHub](https://github.com/absacademic)
 
