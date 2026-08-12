@@ -32,10 +32,10 @@ This website contains selected projects and technical work.
 
 - Mathematics:
   - MATH 31B, 32A, 32B (calculus series)
-  - MATH 33B (differential equations) 
+  - MATH 33B (differential equations)
   - MATH 61 (discrete structures)
   - MATH 115A (linear algebra)
-  - MATH 151A (applied numerical methods) 
+  - MATH 151A (applied numerical methods)
   - MATH 132 (complex analysis for applications)
   - MATH 142 (mathematical modeling)
 - Statistics & Computing:
@@ -51,9 +51,10 @@ This website contains selected projects and technical work.
   - MATH 180 (graph theory)
 
 ### Reading list:
-- *Option Volatility & Pricing* — Sheldon Natenberg
-- *Options, Futures, and Other Derivatives* — John C. Hull
-- *Problem-Solving Strategies* — Arthur Engel
-- *Graph Representation Learning* — William L. Hamilton
-- *Moby-Dick* — Herman Melville
-- *Epic of Gilgamesh*
+
+- _Option Volatility & Pricing_ — Sheldon Natenberg
+- _Options, Futures, and Other Derivatives_ — John C. Hull
+- _Problem-Solving Strategies_ — Arthur Engel
+- _Graph Representation Learning_ — William L. Hamilton
+- _Moby-Dick_ — Herman Melville
+- _Epic of Gilgamesh_
