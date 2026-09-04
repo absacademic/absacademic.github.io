@@ -18,7 +18,7 @@ latest_posts:
 
 ## About Me
 
-I am an undergraduate at the University of California, Los Angeles, double majoring in Mathematics and Statistics and Data Science.
+I am an undergraduate at the University of California, Los Angeles, majoring in Mathematics with a minor in Statistics and Data Science.
 
 My interests include quantitative finance, machine learning, statistical modeling, applied economics, and building analytical systems.
 
@@ -57,4 +57,3 @@ This website contains selected projects and technical work.
 - _Problem-Solving Strategies_ — Arthur Engel
 - _Graph Representation Learning_ — William L. Hamilton
 - _Moby-Dick_ — Herman Melville
-- _Epic of Gilgamesh_
