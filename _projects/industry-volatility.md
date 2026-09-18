@@ -66,7 +66,7 @@ The ordering also survives alternative transformations and treatment of weeks wi
       <img src="{{ '/assets/img/projects/industry-volatility/residual-strength-benchmark.png' | relative_url }}" alt="Observed combined residual network strength is 0.07043 for the market model, 0.07859 for FF3, and 0.07536 for FF5. Each exceeds the corresponding 95 percent simulation range under an independent-shock benchmark." width="2080" height="1560" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 8px;">
     </a>
     <figcaption style="margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.6;">
-      <strong>A balanced split does not imply that dependence disappears.</strong> With residual signs, observed combined network strength exceeds the benchmark for each factor model. Simulations retain common returns and persistent, asymmetric industry volatility while drawing industry-specific shocks independently. Bars show the middle 95% of 499 simulated outcomes per model, not confidence intervals for the observed estimates.
+      <strong>A balanced split does not imply that dependence disappears.</strong> With residual signs, observed combined network strength exceeds the benchmark for each factor model. Simulations retain common returns and persistent, asymmetric industry volatility while drawing industry-specific shocks independently. Bars show the middle 95% of 499 simulated outcomes per model.
     </figcaption>
   </figure>
 </div>
