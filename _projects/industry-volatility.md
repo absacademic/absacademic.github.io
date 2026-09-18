@@ -16,7 +16,7 @@ The central insight is that factor adjustment changes both the size of a return 
 
 This project forms the basis of my September 2026 working paper, _Downside dominance in industry volatility networks: The role of shock classification_.
 
-[View the GitHub repository and read the paper](https://github.com/absacademic/industry-volatility-networks)
+[Read the paper here](https://github.com/absacademic/industry-volatility-networks/blob/main/industry-volatility-paper.pdf)
 
 ## Research question
 
