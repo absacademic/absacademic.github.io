@@ -2,7 +2,7 @@
 layout: page
 title: Minimum Wage and Restaurant Price Pass-Through
 description: An R-based difference-in-differences study of how minimum-wage increases affect food-away-from-home prices across major U.S. metropolitan areas.
-importance: 2
+importance: 3
 category: research
 images:
   lightbox2: true
